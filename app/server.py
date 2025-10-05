@@ -16,6 +16,16 @@ load_dotenv(override=True)
 app = FastAPI()
 retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 
+# Health check endpoint
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "healthy",
+        "retell_key_set": bool(os.environ.get("RETELL_API_KEY")),
+        "openai_key_set": bool(os.environ.get("OPENAI_API_KEY")),
+        "openai_org_set": bool(os.environ.get("OPENAI_ORGANIZATION_ID"))
+    }
+
 
 # Handle webhook from Retell server. This is used to receive events from Retell server.
 # Including call_started, call_ended, call_analyzed
