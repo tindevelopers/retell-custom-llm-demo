@@ -5,7 +5,9 @@
       "command": "npx",
       "args": ["@railway/mcp-server"],
       "env": {
-        "RAILWAY_API_TOKEN": "8dd37c83-8d2d-4f16-9946-b2ad63395108"
+        "RAILWAY_TOKEN": "rw_Fe26.2**76396e7c8f22ad0ac948b01371afde4f42a651a19db5afb88aa7bfedde47423c*WishMXSr2QV53DWF97UvNQ*PaAr8qA1dzp7mbs-5aoPwSFzTcGwhZgxBheGS-91Bj1rl5Ks9rCUfBld8NbaVqRZKxgPVrwdH8Qvu5pD3x8XIA*1762266517424*4da03ab43d24ff7d60ceb92a7fa1fda8ebb6e3b67200d21b273ca1d94a2ad48f*csU9Z4Bu8YMG5AnJyggD_yByVQQIOQRimZypDRWkdME",
+        "RAILWAY_API_TOKEN": "rw_Fe26.2**76396e7c8f22ad0ac948b01371afde4f42a651a19db5afb88aa7bfedde47423c*WishMXSr2QV53DWF97UvNQ*PaAr8qA1dzp7mbs-5aoPwSFzTcGwhZgxBheGS-91Bj1rl5Ks9rCUfBld8NbaVqRZKxgPVrwdH8Qvu5pD3x8XIA*1762266517424*4da03ab43d24ff7d60ceb92a7fa1fda8ebb6e3b67200d21b273ca1d94a2ad48f*csU9Z4Bu8YMG5AnJyggD_yByVQQIOQRimZypDRWkdME",
+        "RAILWAY_CLI_TOKEN": "rw_Fe26.2**76396e7c8f22ad0ac948b01371afde4f42a651a19db5afb88aa7bfedde47423c*WishMXSr2QV53DWF97UvNQ*PaAr8qA1dzp7mbs-5aoPwSFzTcGwhZgxBheGS-91Bj1rl5Ks9rCUfBld8NbaVqRZKxgPVrwdH8Qvu5pD3x8XIA*1762266517424*4da03ab43d24ff7d60ceb92a7fa1fda8ebb6e3b67200d21b273ca1d94a2ad48f*csU9Z4Bu8YMG5AnJyggD_yByVQQIOQRimZypDRWkdME"
       }
     }
   }
