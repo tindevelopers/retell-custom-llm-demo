@@ -23,7 +23,11 @@ async def health_check():
         "status": "healthy",
         "retell_key_set": bool(os.environ.get("RETELL_API_KEY")),
         "openai_key_set": bool(os.environ.get("OPENAI_API_KEY")),
-        "openai_org_set": bool(os.environ.get("OPENAI_ORGANIZATION_ID"))
+        "openai_org_set": bool(os.environ.get("OPENAI_ORGANIZATION_ID")),
+        "retell_key_length": len(os.environ.get("RETELL_API_KEY", "")),
+        "openai_key_length": len(os.environ.get("OPENAI_API_KEY", "")),
+        "openai_org_length": len(os.environ.get("OPENAI_ORGANIZATION_ID", "")),
+        "all_env_vars": list(os.environ.keys())[:10]  # Show first 10 env var names
     }
 
 
