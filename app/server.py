@@ -16,7 +16,7 @@ load_dotenv(override=True)
 app = FastAPI()
 retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 
-# Health check endpoint
+# Health check endpoint - Updated to debug env vars
 @app.get("/health")
 async def health_check():
     return {
