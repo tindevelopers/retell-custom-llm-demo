@@ -39,9 +39,10 @@ CustomLlmRequest = Union[
 class ConfigResponse(BaseModel):
     response_type: Literal["config"] = "config"
     config: Dict[str, bool] = {
-        "auto_reconnect": bool,
-        "call_details": bool,
+        "auto_reconnect": True,
+        "call_details": True,
     }
+    response_id: int
 
 
 class PingPongResponse(BaseModel):
