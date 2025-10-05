@@ -27,7 +27,8 @@ async def health_check():
         "retell_key_length": len(os.environ.get("RETELL_API_KEY", "")),
         "openai_key_length": len(os.environ.get("OPENAI_API_KEY", "")),
         "openai_org_length": len(os.environ.get("OPENAI_ORGANIZATION_ID", "")),
-        "all_env_vars": list(os.environ.keys())[:10]  # Show first 10 env var names
+        "all_env_vars": list(os.environ.keys())[:10],  # Show first 10 env var names
+        "railway_env_vars": {k: v[:10] + "..." if len(v) > 10 else v for k, v in os.environ.items() if k.startswith(('RAILWAY', 'RETELL', 'OPENAI'))}
     }
 
 
