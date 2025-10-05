@@ -20,7 +20,7 @@ retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 @app.get("/health")
 async def health_check():
     return {
-        "status": "healthy - git history cleaned",
+        "status": "healthy - env vars fixed via CLI",
         "retell_key_set": bool(os.environ.get("RETELL_API_KEY")),
         "openai_key_set": bool(os.environ.get("OPENAI_API_KEY")),
         "openai_org_set": bool(os.environ.get("OPENAI_ORGANIZATION_ID")),
