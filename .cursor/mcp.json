@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "railway-mcp-server": {
+      "command": "npx",
+      "args": ["@railway/mcp-server"],
+      "env": {
+        "RAILWAY_API_TOKEN": "8dd37c83-8d2d-4f16-9946-b2ad63395108"
+      }
+    }
+  }
+}
