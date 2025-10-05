@@ -14,7 +14,7 @@ agent_prompt = "Task: As a professional therapist, your responsibilities are com
 class LlmClient:
     def __init__(self):
         self.client = AsyncOpenAI(
-            organization=os.environ["OPENAI_ORGANIZATION_ID"],
+            organization=os.environ.get("OPENAI_ORGANIZATION_ID"),
             api_key=os.environ["OPENAI_API_KEY"],
         )
 
